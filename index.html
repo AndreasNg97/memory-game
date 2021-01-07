@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meme-ory Game</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <main style="border: 1px solid black;">
+        <div id="score-column">
+            <h2 id="clicks-score">Clicks : 0</h2>
+            <h2 id="timer-score">Time : 0:00</h2>
+        </div>
+        <div id="board"></div>
+    </main>
+    <div id="start-overlay" class="overlay">
+        <h1 class="game-title">Meme-ory Game</h1>
+        <button class="btn" onclick="startGame()">START GAME</button>
+    </div>
+    <div id="gameover-overlay" class="overlay">
+        <h1 class="game-title">Well Done!</h1>
+        <div id="game-result">
+
+        </div>
+        <button class="btn" onclick="playAgain()">Play Again</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
